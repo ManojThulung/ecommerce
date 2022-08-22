@@ -66,6 +66,145 @@ a {
   text-align: center;
 }
 
+.cart-wrapper {
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  /* will-change: transform; */
+  transition: all 1s ease-in-out;
+}
+
+.cart-container {
+  height: 100vh;
+  width: 450px;
+  background-color: white;
+  float: right;
+  float: right;
+  padding: 40px 10px;
+  position: relative;
+}
+
+.cart-heading {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  gap: 2px;
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.cart-heading .heading {
+  margin-left: 10px;
+}
+
+.cart-num-items {
+  margin-left: 10px;
+  color: #f02d34;
+}
+
+.empty-cart {
+  margin: 40px;
+  text-align: center;
+}
+
+.empty-cart h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.btn {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 12px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  background-color: #f02d34;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.product-container {
+  margin-top: 15px;
+  overflow: auto;
+  max-height: 70vh;
+  padding: 20px 10px;
+}
+
+.product {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.product .cart-product-image {
+  width: 25%;
+  height: auto;
+}
+
+.item-desc .flex {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  color: #324d67;
+}
+
+.flex h5 {
+  font-size: 15px;
+}
+
+.flex h4 {
+  font-size: 13px;
+}
+
+.item-desc .bottom {
+  margin-top: 20px;
+}
+
+.remove-item {
+  font-size: 24px;
+  color: #f02d34;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.cart-bottom {
+  position: absolute;
+  bottom: 12px;
+  right: 5px;
+  width: 100%;
+  padding: 25px 45px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-container {
+  text-align: center;
+}
+
 .hero-banner-container {
   padding: 100px 40px;
   background-color: #dcdcdc;
