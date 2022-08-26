@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useStateContext } from "../context/StateContext";
 import { urlFor } from "../lib/client";
 import getStripe from "../lib/getStripe";
+import toast from "react-hot-toast";
 
 import {
   AiOutlineLeft,
@@ -25,9 +26,11 @@ function Cart() {
   } = useStateContext();
 
   const handleCheckout = async () => {
+    console.log(cartItem);
+
     const stripe = await getStripe();
 
-    fetch("/api/stripe", {
+    const response = await fetch("/api/stripe", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
